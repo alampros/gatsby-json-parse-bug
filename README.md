@@ -1,7 +1,9 @@
 # gatsby-json-parse-bug
 Demonstrate [a gatsby.js JSON.parse error](https://github.com/gatsbyjs/gatsby/issues/3148).
 
-This project should build fine using the `develop` script, but should fail using the `build` script.
+# To Reproduce the Error:
+
+Run the `succeed` and `fail` scripts in package.json.
 
 # Error during `build-html` stage:
 
@@ -39,7 +41,7 @@ See our docs page on debugging HTML builds for help https://goo.gl/yL9lND
 
 If you change the number of records that are used to create pages to something small (like 10), the build succeeds.
 
-gatsby-node.js:
+**gatsby-node.js:**
 ```js
 exports.createPages = ({ boundActionCreators }) => {
   const { createPage } = boundActionCreators
@@ -51,9 +53,6 @@ exports.createPages = ({ boundActionCreators }) => {
     return createPage({
       path: `/fromjson/${itemId}/`,
       component: pageTemplate,
-      context: {
-        itemId,
-      }
     })
   }))
 }

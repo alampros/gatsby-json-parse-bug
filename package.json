@@ -7,6 +7,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "succeed": "CREATE_PAGE_COUNT=5 yarn build",
+    "fail": "CREATE_PAGE_COUNT=100 yarn build",
     "build": "gatsby build",
     "develop": "gatsby develop -H localhost -p 3000"
   },
