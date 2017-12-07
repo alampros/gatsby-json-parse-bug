@@ -1,5 +1,5 @@
 # gatsby-json-parse-bug
-Demonstrate a weird json parsing bug during gatsby build
+Demonstrate [a gatsby.js JSON.parse error](https://github.com/gatsbyjs/gatsby/issues/3148).
 
 This project should build fine using the `develop` script, but should fail using the `build` script.
 
