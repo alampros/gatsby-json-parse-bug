@@ -13,9 +13,6 @@ exports.createPages = ({ boundActionCreators }) => {
     return createPage({
       path: `/fromjson/${itemId}/`,
       component: pageTemplate,
-      context: {
-        itemId,
-      }
     })
   }))
 }

@@ -14,12 +14,8 @@
     "node" : ">=8.4.0"
   },
   "dependencies": {
-    "classnames": "^2.2.5",
     "gatsby": "^1.9.52",
     "gatsby-link": "^1.0.1",
-    "gatsby-source-filesystem": "^1.4.1",
-    "prop-types": "^15.6.0",
-    "react": "^15.6.2",
-    "react-dom": "^15.6.2"
+    "react": "^15.6.2"
   }
 }
